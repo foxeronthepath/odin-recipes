@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?_gl=1*1t2xca5*_ga*MTY0ODU5ODc0OC4xNzUzMDE4MTM1*_ga_8JE65Q40S6*czE3NTYxMzgyMTckbzYkZzEkdDE3NTYxMzgyMTgkajU5JGwwJGgw") center/cover no-repeat;
+  filter: blur(6px);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.652), rgb(0, 0, 0));
+  z-index: -1;
+}
+
+#banner-title {
+    font-size: 120px;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff4718, #f5852f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-family: "Trebuchet MS ", sans-serif;
+    margin: 20px auto;
+    display: block;
+    height: 200px;
+    max-width: 1000px;
+    align-content: center;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.589);
+    user-select: none;
+}
+
+div {
+    height: 80px;
+}
+
+.recipe-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+.recipe-list li {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.recipe-list li a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.recipe-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
